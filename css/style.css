@@ -1,6 +1,6 @@
 body{
-	background-color: #fff;
-
+	background-color: black;
+	background: url('../images/background.jpg');
 }
 
 .page-header{
@@ -47,8 +47,9 @@ small{
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
-	text-shadow: 0px 1px 10px;
+	text-shadow: 0px 1px 5px;
 	margin-bottom: 100px;
+	color: #FFF3E0;
 	-webkit-animation-delay: 0.4s;
 	-moz-animation-delay: 0.4s;
 	animation-delay: 0.4s;
@@ -81,18 +82,14 @@ small{
 	color:#000;
 }
 
-input{
-	border: none;
-	background-color: transparent;
-	color:#000;
-	margin-right: 1px;
-}
+
 
 label{
 	float: left;
 	font-size: 17px;
 	font-weight: 600;
 	text-transform: uppercase;
+	color: #ECEFF1;
 }
 
 .col-xs-6{
@@ -104,16 +101,6 @@ label{
 }
 
 
-
-button.btnSearch{
-	background-color: transparent;
-	color: #000;
-	width: 90%;
-	padding: 10px;
-	font-size: 25px;
-	font-weight: 20px;
-
-}
 
 
 
@@ -151,21 +138,53 @@ button.btnSearch{
 
 
 .form-box{
-	margin-top:10px;
+background-color: transparent !important;
 }
 
 .modal-dialog{
 	width:400px;
 	padding:10px;
+	margin-top: 1px;
+	
 }
 
 .middle-border{
 	min-height: 150px;
-	margin-top: 100px;
-	border-right: 1px solid black;
+	margin-top: 80px;
+	border-right: 2px solid #78909C;
+	
+
 }
 
+.modal-content{
+	background-color:transparent;
+	padding:20px;
+}
 
+h3.text-center{
+	color: #212121;
+	font-weight: 800;
+}
 
+input.form-control{
+	background-color: #212121;
+	border-color:#212121;	
+}
+
+.btn{
+	width: 100%;
+	background-color: #BDBDBD;
+	font-weight: 800;
+}
+
+.btn:active,.btn:hover,
+.btn:focus{
+	background-color: #E65100;
+}
+
+img.icon{
+	float: right;
+	width:20px;
+}
 
 
