@@ -27,18 +27,6 @@ small{
 @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 
-.fade-in.content {
-
-	border: 2px solid black;
-	width: 50%;
-	margin-left: auto;
-	margin-right: auto;
-	padding: 10px;
-	text-align: center; 
--webkit-animation-delay: 0.7s;
--moz-animation-delay: 0.7s;
-animation-delay: 0.7s;
-}
 
 .fade-in {
 	opacity:0;  /* make things invisible upon start */
@@ -54,6 +42,80 @@ animation-delay: 0.7s;
 	-moz-animation-duration:1s;
 	animation-duration:1s;
 }
+
+.fade-in.title{
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	text-shadow: 0px 1px 10px;
+	margin-bottom: 100px;
+	-webkit-animation-delay: 0.4s;
+	-moz-animation-delay: 0.4s;
+	animation-delay: 0.4s;
+}
+
+.fade-in.content {
+	border: 1px solid #757575;
+	background-color: transparent;
+	width: 30%;
+	height: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 50px;
+	text-align: center; 
+	box-shadow: 0px 0px 6px 1px;
+	-webkit-animation-delay: 0.4s;
+	-moz-animation-delay: 0.4s;
+	animation-delay: 0.4s;
+}
+
+
+.form-group{
+	width: 100%;
+}
+
+.col-xs-4{
+	width: 50%;
+	border:none;
+	background-color: transparent;
+	color:#000;
+}
+
+input{
+	border: none;
+	background-color: transparent;
+	color:#000;
+	margin-right: 1px;
+}
+
+label{
+	float: left;
+	font-size: 17px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.col-xs-6{
+	width: 100%;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+
+
+button.btnSearch{
+	background-color: transparent;
+	color: #000;
+	width: 90%;
+	padding: 10px;
+	font-size: 25px;
+	font-weight: 20px;
+
+}
+
+
 
 @media only screen and (max-width: 768px){
 	h1{
