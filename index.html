@@ -10,9 +10,11 @@
 
 	<!--Bootstrap core CSS file-->
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 
 	<!--CSS files-->
 	<link rel="stylesheet" href="css/style.css">
+
 
 	<title>Trivago</title>
 
@@ -22,69 +24,102 @@
 
 	<!-- Header
 	============================================================-->
-	<div class="fade-in page-header" id="banner">
-		<h1><img src="images/logo.svg"><small id="small">Hotel Search</small></h1>
-
+	<div class="page-header" id="banner">
+		<h1><img id="img" src="images/logo.svg"><small id="small">Hotel Search</small></h1>
 	</div>
 	
-	<div class="fade-in title">
-		<div id="title">
-		<h1>We want you to have the best experience</h1>
-		</div>
+<div class="fade-in title">
+	<div id="title">
+	<h1 class="centerTitle">We want you to have the best experience!</h1>
 	</div>
-		<div class="fade-in">
-			<div class="row">
-				<div class="col-sm-6">
-					<div class="leftModal">
-						<div>
-							<h2 id="leftModalText">Because comfort can make you feel rejuvenated! Find your ideal hotel for the best price. A happy stay makes happy memories! </h2>			
-						</div>
-					</div>
+</div>
+<div class="fade-in">
+	<div class="row">
+		<div class="col-sm-5">
+			<div class="leftModal">
+				<div>
+					<h3 class="leftModalText">Because Comfort can make you feel rejuvenated!<br> 
+					Find your ideal hotel for the best price.</h3> 
+					<h3 class="leftModal"><i>A happy stay makes a happy memory!</i></h3> 			
 				</div>
-				<div class="col-sm-1 middle-border"></div>
-				<div class="col-sm-1">
-					<div class="form-box">
-							<div class="modal-dialog">
-								<div class="modal-content">
-									<div class="form-group">
-										<label>Happy Booking!</label>
-										<input type="text" class="form-control input-lg" placeholder="Enter your City">
+			</div>
+		</div>
+	<div class="col-sm-1 middle-border"></div>
+		<div class="col-sm-1">
+			<div class="form-box">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="form-group">
+							<label>Happy Booking!</label>
+							<input type="text" class="form-control input-lg" placeholder="Enter your City">
+						</div>
+
+						<div class="form-group">
+							<div class="row">
+								<div class="col-xs-6">
+									<label class="mLabels">Check in</label>
+									<input type="date" class="form-control" >
+								</div>
+
+								<div class="col-xs-6">
+									<label class="mLabels">Check out</label>
+									<input type="date" class="form-control">
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<div class="row">
+								<div class="col-md-12">
+									<div class="col-xs-6 labelPerson">
+										<label>Number of Persons</label>
 									</div>
+									<div class="col-xs-6">
+									<button type="button" class="btnMenu dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspop="true" aria-expanded="true">
+									Adults
+									</button>
+									<ul class="dropdown-menu" arialabelledby="dropdownMenu1" style="width:10px;">
+										<li><center><img src="images/one.png" style="width:20px;"></center></li>
+										<li><center><img src="images/two.png" style="width:25px;"></center></li>
+										<li><center><img src="images/three.png" style="width:30px;"></center></li>
+									</ul>
+											
+									<button type="button" class="btnMenu dropdown-toggle" id="dropdownMenu2" data-toggle="dropdown" aria-haspop="true" aria-expanded="true">
+									Children
+									</button>
 
-									<div class="form-group">
-										<div class="row">
-											<div class="col-xs-4">
-												<label>Check in</label>
-												<input type="date" class="form-control" >
-											</div>
-
-											<div class="col-xs-4">
-												<label>Check out</label>
-												<input type="date" class="form-control">
-											</div>
-										</div>
-									</div>
-
-									<div class="form-group">
-										<button type"button" class="btn btn-lg">Hotel Search<img class="icon" src="images/search.svg"></button>
+									<ul class="dropdown-menu" arialabelledby="dropdownMenu2" style="width:10px;">
+										<li><center><img src="images/child1.png" style="width:20px;"></center></li>
+										<li><center><img src="images/two.png" style="width:25px;"></center></li>
+										<li><center><img src="images/three.png" style="width:30px;"></center></li>
+									</ul>
 									</div>
 								</div>
 							</div>
+						</div>
+
+						<div class="form-group">
+							<button type"button" class="btn btn-lg btnSearch">Hotel Search<img class="icon" src="images/search.svg" id="home" onclick="return redirect()"></button>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-
-	
+	</div>
+</div>
 
 
 	<footer>
 	</footer>
 
-
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		function redirect(){
+			var ref=document.getElementById('home').value;
+			window.location = "home.html";
+		}
+		return false;
+	</script>
 
 </body>
+
+
