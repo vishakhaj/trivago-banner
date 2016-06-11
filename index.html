@@ -10,11 +10,13 @@
 
 	<!--Bootstrap core CSS file-->
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+	<!--Font files-->
 	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Snippet' rel='stylesheet' type='text/css'>
 
 	<!--CSS files-->
 	<link rel="stylesheet" href="css/style.css">
-
 
 	<title>Trivago</title>
 
@@ -28,97 +30,122 @@
 		<h1><img id="img" src="images/logo.svg"><small id="small">Hotel Search</small></h1>
 	</div>
 	
-<div class="fade-in title">
-	<div id="title">
-	<h1 class="centerTitle">We want you to have the best experience!</h1>
+	<!-- Content
+	============================================================-->
+	<div class="fade-in title">
+		<div id="title">
+		<h1 class="centerTitle">We want you to have the best experience!</h1>
+		</div>
 	</div>
-</div>
-<div class="fade-in">
-	<div class="row">
-		<div class="col-sm-5">
-			<div class="leftModal">
-				<div>
-					<h3 class="leftModalText">Because Comfort can make you feel rejuvenated!<br> 
-					Find your ideal hotel for the best price.</h3> 
-					<h3 class="leftModal"><i>A happy stay makes a happy memory!</i></h3> 			
+
+	<!-- Row
+	============================================================-->
+	<div class="fade-in">
+		<div class="row">
+
+	<!-- Left Modal
+	============================================================-->
+			<div class="col-sm-5">
+				<div class="leftModal"><i>
+					<div>
+						<h3 class="leftModalText">Because Comfort can make you feel rejuvenated!<br><br>
+						<b>Find your ideal hotel for the best price.</b></h3> 
+						<h3 class="leftModal">A happy stay makes a happy memory!</h3> 			
+					</div></i>
 				</div>
 			</div>
-		</div>
-	<div class="col-sm-1 middle-border"></div>
-		<div class="col-sm-1">
-			<div class="form-box">
-				<div class="modal-dialog">
-					<div class="modal-content">
-						<div class="form-group">
-							<label>Happy Booking!</label>
-							<input type="text" class="form-control input-lg" placeholder="Enter your City">
-						</div>
 
-						<div class="form-group">
-							<div class="row">
-								<div class="col-xs-6">
-									<label class="mLabels">Check in</label>
-									<input type="date" class="form-control" >
-								</div>
+	<!-- Middle Border
+	============================================================-->			
+		<div class="col-sm-1 middle-border"></div>
 
-								<div class="col-xs-6">
-									<label class="mLabels">Check out</label>
-									<input type="date" class="form-control">
-								</div>
+	<!-- Right Modal
+	============================================================-->
+			<div class="col-sm-1">
+				<div class="form-box">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="form-group">
+								<label>Happy Booking!</label>
+								<input type="text" class="form-control input-lg" id="city" placeholder="Enter your City">
 							</div>
-						</div>
 
-						<div class="form-group">
-							<div class="row">
-								<div class="col-md-12">
-									<div class="col-xs-6 labelPerson">
-										<label>Number of Persons</label>
-									</div>
+							<div class="form-group">
+								<div class="row">
 									<div class="col-xs-6">
-									<button type="button" class="btnMenu dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspop="true" aria-expanded="true">
-									Adults
-									</button>
-									<ul class="dropdown-menu" arialabelledby="dropdownMenu1" style="width:10px;">
-										<li><center><img src="images/one.png" style="width:20px;"></center></li>
-										<li><center><img src="images/two.png" style="width:25px;"></center></li>
-										<li><center><img src="images/three.png" style="width:30px;"></center></li>
-									</ul>
-											
-									<button type="button" class="btnMenu dropdown-toggle" id="dropdownMenu2" data-toggle="dropdown" aria-haspop="true" aria-expanded="true">
-									Children
-									</button>
+										<label class="mLabels">Check in</label>
+										<input type="date" class="form-control" >
+									</div>
 
-									<ul class="dropdown-menu" arialabelledby="dropdownMenu2" style="width:10px;">
-										<li><center><img src="images/child1.png" style="width:20px;"></center></li>
-										<li><center><img src="images/two.png" style="width:25px;"></center></li>
-										<li><center><img src="images/three.png" style="width:30px;"></center></li>
-									</ul>
+									<div class="col-xs-6">
+										<label class="mLabels">Check out</label>
+										<input type="date" class="form-control">
 									</div>
 								</div>
 							</div>
-						</div>
 
-						<div class="form-group">
-							<button type"button" class="btn btn-lg btnSearch">Hotel Search<img class="icon" src="images/search.svg" id="home" onclick="return redirect()"></button>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
+							<div class="form-group">
+								<div class="row">
+									<div class="col-md-12">
+										<div class="col-xs-6 labelPerson">
+											<label id="mPersonsLabel">Number of Persons</label>
+										</div>
+										<div class="col-xs-3">
+										<div class="dropdown">
+											<button type="button" class="btnMenu dropdown-toggle"  data-toggle="dropdown" >
+											Adults<span class="caret"></span>
+											</button>
+											<ul class="dropdown-menu">
+												<li><a href="#" value="1"><img src="images/one.png" style="width:20px;"></a></li>
+												<li><a href="#"><img src="images/two.png" style="width:25px;"></a></li>
+												<li><a href="#"><img src="images/three.png" style="width:30px;"></a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="col-xs-3">
+										<div class="dropdown">
+											<button  class="btnMenu dropdown-toggle" type="button" data-toggle="dropdown">
+											Children<span class="caret"></span>
+											</button>
+
+											<ul class="dropdown-menu">
+												<li><a href="#"><img src="images/child1.png" style="width:20px;"></a></li>
+		      									<li><a href="#"><img src="images/child2.png" style="width:40px;"></a></li>
+		      									<li><a href="#"><img src="images/child3.png" style="width:60px;"></a></li>
+											</ul>
+										</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<button type"button" class="btn btn-lg btnSearch" onClick="redirect()">Hotel Search<img class="icon" src="images/search.svg"></button>
+							</div>
+							</div><!-- modal-content ends========================================================-->
+						</div><!-- modal-dialog ends==========================================================-->
+					</div><!-- form-box ends============================================================-->
+				</div><!-- col-sm-1 ends============================================================-->
+			</div>	<!-- row ends============================================================-->
+		</div><!-- fade-in class ends============================================================-->
+	
+
+<!-- Javascript function redirect()
+	============================================================-->
+<script type="text/javascript">
+	function redirect(){
+		window.location ='home.html';
+	}
 
 
-	<footer>
-	</footer>
+</script>
 
-	<script type="text/javascript">
-		function redirect(){
-			var ref=document.getElementById('home').value;
-			window.location = "home.html";
-		}
-		return false;
-	</script>
+<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
 
 </body>
 
